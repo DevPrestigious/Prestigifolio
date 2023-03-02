@@ -1,3 +1,5 @@
+Thank you to Create React App. This will be the start of my travel blog.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
