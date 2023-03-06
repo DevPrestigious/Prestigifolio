@@ -1,6 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import Marker from './Marker';
+import './style/map.css';
+import Marker from './marker';
 
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const Map = ({ apiKey }) => {
