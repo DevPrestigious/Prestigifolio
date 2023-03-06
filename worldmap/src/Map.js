@@ -1,8 +1,8 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
+import Marker from './Marker';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const Map = ({ apiKey }) => {
   const mapOptions = {
     center: {lat: 61.204483, lng: 92.723923},
@@ -102,6 +102,7 @@ const Map = ({ apiKey }) => {
     ]
   };
   
+  
   return (
     <div style={{ height: '95vh', width: '100%' }}>
       <GoogleMapReact
@@ -109,42 +110,55 @@ const Map = ({ apiKey }) => {
         defaultCenter={mapOptions.center}
         defaultZoom={mapOptions.zoom}
         options={mapOptions}
-        
       >
-        <AnyReactComponent
+        <Marker
           lat={59.955413}
           lng={30.337844}
-          text="St.Petersburg"
+          name="St.Petersburg"
+          color="blue"
+          url="https://en.wikipedia.org/wiki/Saint_Petersburg"
         />
-        <AnyReactComponent
+        <Marker
           lat={55.7558}
           lng={37.6173}
-          text="Moscow"
+          name="Moscow"
+          color="blue"
+          url="http://en.kremlin.ru/"
         />
-        <AnyReactComponent
+        <Marker
           lat={53.192062}
           lng={107.345824}
-          text="Baikal"
+          name="Baikal"
+          color="blue"
+          url="https://en.wikipedia.org/wiki/Lake_Baikal"
         />
-        <AnyReactComponent
+        <Marker
           lat={43.115266}
           lng={131.885301}
-          text="Vladivostok"
+          name="Vladivostok"
+          color="blue"
+          url="https://en.wikipedia.org/wiki/Vladivostok"
         />
-        <AnyReactComponent
+        <Marker
           lat={54.007122}
           lng={86.637275}
-          text="Kiselovsk"
+          name="Kiselyovsk"
+          color="blue"
+          url="https://en.wikipedia.org/wiki/Kiselyovsk"
         />
-        <AnyReactComponent
+        <Marker
           lat={52.927253}
           lng={78.571771}
-          text="Yarovoye"
+          name="Yarovoye"
+          color="blue"
+          url="https://en.wikipedia.org/wiki/Yarovoye,_Altai_Krai"
         />
-        <AnyReactComponent
+        <Marker
           lat={43.582697}
           lng={39.721771}
-          text="Sochi"
+          name="Sochi"
+          color="blue"
+          url="https://en.wikipedia.org/wiki/Sochi"
         />
       </GoogleMapReact>
     </div>
