@@ -25,7 +25,7 @@ export default function SimpleBottomNavigation() {
          >
             <BottomNavigationAction label="Something Someday" icon={<TimelapseIcon />} />
             <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-            <BottomNavigationAction label="Travel Blog" icon={<LocationOnIcon />} />
+            <BottomNavigationAction label="Travel Blog" href="./map.html" icon={<LocationOnIcon />} />
          </BottomNavigation>
       </Box>
       </MobileView>
