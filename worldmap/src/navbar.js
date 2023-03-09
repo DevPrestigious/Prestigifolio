@@ -2,14 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './style/navbar.css';
+import {BrowserView, MobileView} from 'react-device-detect';
 
 function ColorSchemesExample() {
    return (
-      <Navbar bg="primary" variant="dark">
+      <>
+      <BrowserView>
+      <Navbar bg="dark" variant="dark">
          <Container className='nav'>
             <Navbar.Brand href="#home">
                <img
-                  src="./images/logo.png"
+                  src={require('./images/logo.png')}
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
@@ -24,6 +27,9 @@ function ColorSchemesExample() {
                </Nav>
          </Container>
       </Navbar>
+      </BrowserView>
+      <MobileView></MobileView>
+      </>
    );
 }
 
