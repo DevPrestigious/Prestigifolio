@@ -112,7 +112,7 @@ const Map = ({ apiKey }) => {
   
 
    return (
-      <div style={{ height: '90vh', width: '100%' }}>
+      <div style={{ height: '90.7vh', width: '100%' }}>
          <GoogleMapReact
             bootstrapURLKeys={{ key: apiKey }}
             defaultCenter={mapOptions.center}
